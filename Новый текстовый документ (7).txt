@@ -1,0 +1,138 @@
+import 'package:flutter/material.dart';
+
+void main() {
+runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+const MyApp({super.key});
+
+@OverRide
+Widget build(BuildContext context) {
+return MaterialApp(
+home: Scaffold(
+appBar: AppBar(title: const Text('Шкаф')),
+body: const Shkaf(),
+),
+);
+}
+}
+
+class Shkaf extends StatelessWidget {
+const Shkaf({super.key});
+
+@OverRide
+Widget build(BuildContext context) {
+return Container(
+width: 300,
+height: 600,
+decoration: BoxDecoration(
+border: Border.all(color: Colors.black, width: 2),
+),
+child: Column(
+children: [
+Expanded(
+flex: 2,
+child: Row(
+children: [
+Expanded(
+flex: 1,
+child: Container(
+color: Colors.blue,
+),
+),
+Expanded(
+flex: 1,
+child: Container(
+color: Colors.red,
+),
+),
+],
+),
+),
+Expanded(
+flex: 1,
+child: Row(
+children: [
+Expanded(
+flex: 1,
+child: Container(
+decoration: const BoxDecoration(
+color: Colors.green,
+border: Border(
+top: BorderSide(color: Colors.black, width: 1),
+bottom: BorderSide(color: Colors.black, width: 1),
+),
+),
+),
+),
+Expanded(
+flex: 2,
+child: Column(
+children: [
+Expanded(
+flex: 1,
+child: Container(
+decoration: const BoxDecoration(
+color: Colors.purple,
+border: Border(
+left: BorderSide(color: Colors.black, width: 1),
+right: BorderSide(color: Colors.black, width: 1),
+),
+),
+),
+),
+Expanded(
+flex: 1,
+child: Container(
+decoration: const BoxDecoration(
+color: Colors.orange,
+border: Border(
+left: BorderSide(color: Colors.black, width: 1),
+right: BorderSide(color: Colors.black, width: 1),
+),
+),
+),
+),
+],
+),
+),
+Expanded(
+flex: 1,
+child: Container(
+decoration: const BoxDecoration(
+color: Colors.yellow,
+border: Border(
+top: BorderSide(color: Colors.black, width: 1),
+bottom: BorderSide(color: Colors.black, width: 1),
+),
+),
+),
+),
+],
+),
+),
+Expanded(
+flex: 2,
+child: Row(
+children: [
+Expanded(
+flex: 1,
+child: Container(
+color: Colors.blue,
+),
+),
+Expanded(
+flex: 1,
+child: Container(
+color: Colors.red,
+),
+),
+],
+),
+),
+],
+),
+);
+}
+}
